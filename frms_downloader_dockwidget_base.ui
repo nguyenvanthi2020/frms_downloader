@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frms_downloaderDockWidgetBase</class>
+ <widget class="QDockWidget" name="frms_downloaderDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>574</height>
+   </rect>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/plugins/frms_downloader/icon.png</normaloff>:/plugins/frms_downloader/icon.png</iconset>
+  </property>
+  <property name="floating">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>FRMS Downloader</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btn_start">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>START</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="2" colspan="3">
+     <widget class="QgsProjectionSelectionWidget" name="outProjection">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="btn_stop">
+      <property name="text">
+       <string>STOP</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2" colspan="3">
+     <widget class="QLineEdit" name="inUsername">
+      <property name="text">
+       <string>postgres</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btn_checkcon">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>CHECK</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="2" colspan="2">
+     <widget class="QLineEdit" name="outPath"/>
+    </item>
+    <item row="6" column="2" colspan="3">
+     <widget class="QLineEdit" name="inPort">
+      <property name="text">
+       <string>5433</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0">
+     <widget class="QLabel" name="lbl_saveas">
+      <property name="text">
+       <string>Save as</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="lbl_username">
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="2">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/plugins/frms_downloader/logo_ifee.png</pixmap>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="lbl_port">
+      <property name="text">
+       <string>Port</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="4">
+     <widget class="QPushButton" name="btn_download">
+      <property name="focusPolicy">
+       <enum>Qt::StrongFocus</enum>
+      </property>
+      <property name="text">
+       <string>Download</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLabel" name="lbl_password">
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="4">
+     <widget class="QPushButton" name="btn_browse">
+      <property name="text">
+       <string>Browse</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="lbl_province">
+      <property name="text">
+       <string>Province</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="2" colspan="3">
+     <widget class="QComboBox" name="inCommune"/>
+    </item>
+    <item row="22" column="2" colspan="3">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <widget class="QLabel" name="lbl_district">
+      <property name="text">
+       <string>District</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lbl_database">
+      <property name="text">
+       <string>Connection</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="2" colspan="3">
+     <widget class="QComboBox" name="inDistrict"/>
+    </item>
+    <item row="16" column="0">
+     <widget class="QLabel" name="lbl_commune">
+      <property name="text">
+       <string>Commune</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2" colspan="3">
+     <widget class="QComboBox" name="inProvince"/>
+    </item>
+    <item row="8" column="2" colspan="3">
+     <widget class="QLineEdit" name="inPassword">
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="lbl_host">
+      <property name="text">
+       <string>Host</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" colspan="3">
+     <widget class="QComboBox" name="inHost"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QRadioButton" name="langEng">
+      <property name="text">
+       <string>English</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lbl_lang">
+      <property name="text">
+       <string>Language</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QRadioButton" name="langVie">
+      <property name="text">
+       <string>Tiếng Việt</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QgsProjectionSelectionWidget</class>
+   <extends>QWidget</extends>
+   <header>qgsprojectionselectionwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <connections/>
+</ui>

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/plugins/frms_downloader" >
+        <file>icon.png</file>
+        <file>logo_ifee.png</file>
+    </qresource>
+</RCC>
